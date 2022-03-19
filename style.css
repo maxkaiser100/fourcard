@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    font-size: 12px;
+    font-family: 'Poppins',sans-serif;
+}
+
+p {
+    margin: 0rem 0rem;
+    padding: 0rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0rem 0rem;
+}
+
+.allWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cardsWrapper {
+    display:flex;
+    flex-direction: column;
+    width: auto; 
+}
+
+.topTitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: .5rem;
+    margin-top: 4rem;
+    color:hsl(229, 6%, 66%);
+   
+}
+
+.textContent {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    
+    margin-bottom: 3rem;
+}
+
+.bottomTitle{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: .5rem;
+    color: hsl(234, 12%, 34%);
+   
+}
+
+.card {
+    width:23rem;
+    height: 18rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 3rem;
+    box-shadow: 10px 10px 10px lightgray, -1em 1em .4em lightgray;
+    margin-bottom: 2rem;
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.card img {
+    width: 4rem;
+}
+
+.cardColorCyan {
+    height: .3rem;
+    width: 100%;
+    background-color: hsl(180, 62%, 55%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardColorRed {
+    height: .3rem;
+    width: 100%;
+    background-color: hsl(0, 78%, 62%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardColorOrange {
+    height: .3rem;
+    width: 100%;
+    background-color: hsl(34, 97%, 64%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardColorTeal {
+    height: .3rem;
+    width: 100%;
+    background-color: hsl(212, 86%, 64%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.cardText {
+    margin-top: .75rem;
+    color: hsl(229, 6%, 66%);
+    line-height: 1.5rem;
+}
+
+.cardIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+
+footer {
+    width: 20rem;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 480px) {
+    .cardsWrapper {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        align-items: center;
+}
+
+    .topTitle {
+        font-size: 3rem;
+    }
+
+    .bottomTitle {
+        font-size: 3rem;
+    }
+
+    .textContent {
+        font-size: 1.5rem;
+        width: 60rem;
+    }
+
+    .doubleCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
